@@ -1,13 +1,28 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAu5_4b9FPPkICfTENRExmm0fDlCfFUZm0",
-    authDomain: "webbackend-9bc2c.firebaseapp.com",
-    projectId: "webbackend-9bc2c",
-    storageBucket: "webbackend-9bc2c.firebasestorage.app",
-    messagingSenderId: "386812881122",
-    appId: "1:386812881122:web:df367aa286b70365d316bb"
-  };
+  apiKey: "AIzaSyCT2OoN5T5CdV1trwHp9bKW0JneCjAQuQQ",
+  authDomain: "test-6b0db.firebaseapp.com",
+  projectId: "test-6b0db",
+  storageBucket: "test-6b0db.firebasestorage.app",
+  messagingSenderId: "766154141135",
+  appId: "1:766154141135:web:f715b370369485f0fcf6ba"
+};
 
+const firebaseConfig = {
+
+    apiKey: "AIzaSyCT2OoN5T5CdV1trwHp9bKW0JneCjAQuQQ",
+
+    authDomain: "test-6b0db.firebaseapp.com",
+
+    projectId: "test-6b0db",
+
+    storageBucket: "test-6b0db.firebasestorage.app",
+
+    messagingSenderId: "766154141135",
+
+    appId: "1:766154141135:web:f715b370369485f0fcf6ba"
+
+  };
 
 
 // Initialize Firebase
