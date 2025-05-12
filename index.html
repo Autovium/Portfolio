@@ -1,35 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <title>Autovium Store</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
-    <div class="container">
-        <h1>Send Data to Firebase</h1>
-        <form id="dataForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+<body class="landing is-preload">
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Autovium</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="#store">Store</a></li>
+                                <li><a href="#order">Order</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>Autovium Store</h2>
+                <p>Your one-stop shop for microcontroller components & automation essentials</p>
+                <ul class="actions special">
+                    <li><a href="#store" class="button primary">Browse Products</a></li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <a href="#one" class="more scrolly">Learn More</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="one" class="wrapper style1 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Specialized in machine automation, embedded systems<br />and machine vision solutions</h2>
+                    <p>Autovium Technologies provides fine-tuned, industrial-grade engineering solutions and components for makers and professionals alike.</p>
+                </header>
+                <ul class="icons major">
+                    <li><span class="icon fa-microchip major style1"></span></li>
+                    <li><span class="icon fa-wrench major style2"></span></li>
+                    <li><span class="icon fa-cogs major style3"></span></li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+        </section>
+
+        <!-- Store Section -->
+        <section id="store" class="wrapper style2">
+            <div class="inner">
+                <header class="major">
+                    <h2>Featured Products</h2>
+                </header>
+                <div class="box alt">
+                    <div class="row gtr-uniform">
+
+                        <!-- Product 1 -->
+                        <div class="col-4 col-6-medium col-12-xsmall">
+                            <span class="image fit"><img src="images/esp32.jpg" alt="ESP32 Board" /></span>
+                            <h3>ESP32 Dev Board</h3>
+                            <p>Wi-Fi + Bluetooth combo microcontroller.</p>
+                            <strong>₹499</strong><br>
+                            <button class="button small">Add to Cart</button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-4 col-6-medium col-12-xsmall">
+                            <span class="image fit"><img src="images/arduino.jpg" alt="Arduino UNO R3" /></span>
+                            <h3>Arduino UNO R3</h3>
+                            <p>Classic ATmega328P board for all skill levels.</p>
+                            <strong>₹599</strong><br>
+                            <button class="button small">Add to Cart</button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-4 col-6-medium col-12-xsmall">
+                            <span class="image fit"><img src="images/resistor-kit.jpg" alt="Resistor Kit" /></span>
+                            <h3>Resistor Kit (520 pcs)</h3>
+                            <p>All essential values from 10Ω to 1MΩ.</p>
+                            <strong>₹149</strong><br>
+                            <button class="button small">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <button type="submit">Submit</button>
-        </form>
-        <div id="status"></div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order" class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Ready to order?</h2>
+                    <p>We’re currently taking orders via our order form.</p>
+                    <a href="https://forms.gle/YOUR-FORM-LINK" target="_blank" class="button primary">Place Order</a>
+                </header>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Autovium Technologies</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
